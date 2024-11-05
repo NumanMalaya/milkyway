@@ -83,23 +83,23 @@
         height: 90px;
     }
     .earth-orbit {
-        width: 70px;
-        height: 70px;
+        width: 65px;
+        height: 65px;
     }
     .earth-rotate {
-        width: 70px;
-        height: 70px;
+        width: 65px;
+        height: 65px;
     }
     .moon {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
     }
     @keyframes earthOrbit {
         from {
-            transform: rotate(0deg) translateX(120px);
+            transform: rotate(0deg) translateX(110px);
         }
         to {
-            transform: rotate(360deg) translateX(120px);
+            transform: rotate(360deg) translateX(110px);
         }
     }
     @keyframes moonOrbit {
