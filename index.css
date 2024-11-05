@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.space{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sun{
+    background-image: url(pics/sun.png);
+    background-size: cover;
+    background-position: center;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.earth-orbit{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: earthOrbit 100s linear infinite;
+}
+.earth-rotate{
+    background-image: url(pics/earth.webp);
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: earthRotation 5s linear infinite;
+}
+.moon{
+    background-image: url(pics/moon.png);
+    background-size: cover;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    animation: moonOrbit 20s linear infinite;
+}
+@keyframes earthRotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes earthOrbit {
+    from {
+        transform: rotate(0deg) translateX(200px);
+    }
+    to {
+        transform: rotate(360deg) translateX(200px);
+    }
+}
+@keyframes moonOrbit {
+    from {
+        transform: rotate(0deg) translateX(70px);
+    }
+    to {
+        transform: rotate(360deg) translateX(70px);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .sun{
+        width: 130px;
+        height: 130px;
+    }
+    .earth-orbit {
+        width: 80px;
+        height: 80px;
+    }
+    .earth-rotate {
+        width: 80px;
+        height: 80px;
+    }
+    .moon {
+        width: 40px;
+        height: 40px;
+    }
+    @keyframes earthOrbit {
+        from {
+            transform: rotate(0deg) translateX(150px);
+        }
+        to {
+            transform: rotate(360deg) translateX(150px);
+        }
+    }
+    @keyframes moonOrbit {
+        from {
+            transform: rotate(0deg) translateX(60px);
+        }
+        to {
+            transform: rotate(360deg) translateX(60px);
+        }
+    }
+}
+@media (max-width: 480px) {
+    .sun {
+        width: 80px;
+        height: 80px;
+    }
+    .earth-orbit {
+        width: 50px;
+        height: 50px;
+    }
+    .earth-rotate {
+        width: 50px;
+        height: 50px;
+    }
+    .moon {
+        width: 25px;
+        height: 25px;
+    }
+    @keyframes earthOrbit {
+        from {
+            transform: rotate(0deg) translateX(100px);
+        }
+        to {
+            transform: rotate(360deg) translateX(100px);
+        }
+    }
+    @keyframes moonOrbit {
+        from {
+            transform: rotate(0deg) translateX(40px);
+        }
+        to {
+            transform: rotate(360deg) translateX(40px);
+        }
+    }
+}
