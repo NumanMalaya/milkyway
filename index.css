@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-.space{
+body{
     background-color: black;
     width: 100%;
     height: 100vh;
@@ -61,18 +61,18 @@
 }
 @keyframes earthOrbit {
     from {
-        transform: rotate(0deg) translateX(200px);
+        transform: rotate(0deg) translateX(175px);
     }
     to {
-        transform: rotate(360deg) translateX(200px);
+        transform: rotate(360deg) translateX(175px);
     }
 }
 @keyframes moonOrbit {
     from {
-        transform: rotate(0deg) translateX(75px);
+        transform: rotate(0deg) translateX(70px);
     }
     to {
-        transform: rotate(360deg) translateX(75px);
+        transform: rotate(360deg) translateX(70px);
     }
 }
 
